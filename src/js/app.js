@@ -1,5 +1,4 @@
-window.onload = function (){
-     
+window.onload = function (){    
      document.querySelector('#excuses').innerHTML = generadorExcusas();
 }
 
@@ -10,10 +9,10 @@ let generadorExcusas = () => {
     let queDaño = ['mi tarea', 'mi teléfono', 'el auto'];
     let cuandoFue = ['antes de la clase', 'cuando dormía', 'mientras hacía ejercicio', 'durante el almuerzo', 'mientras oraba'];
 
-    let quienIdx = Math.floor(Math.random() * quienFue.length);
-    let isoIdx = Math.floor(Math.random() * queIso.length);
-    let dañoIdx = Math.floor(Math.random() * queDaño.length);
-    let fueIdx = Math.floor(Math.random() * cuandoFue.length);
+    let quienIndexRandom = Math.floor(Math.random() * quienFue.length);
+    let isoIndexRandom = Math.floor(Math.random() * queIso.length);
+    let dañoIndexRandom = Math.floor(Math.random() * queDaño.length);
+    let fueIndexRandom = Math.floor(Math.random() * cuandoFue.length);
 
-    return `${quienFue[quienIdx]}, ${queIso[isoIdx]}, ${queDaño[dañoIdx]}, ${cuandoFue[fueIdx]}.`;
+    return `${quienFue[quienIndexRandom]}, ${queIso[isoIndexRandom]}, ${queDaño[dañoIndexRandom]}, ${cuandoFue[fueIndexRandom]}.`;
 }
